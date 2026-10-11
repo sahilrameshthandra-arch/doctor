@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compassionate, expert medical care for you and your family. Board-certified physicians, convenient online booking, and secure patient portal.">
+    <meta name="theme-color" content="#1e40af">
+    <title>Meridian Medical Group | Expert Care for Your Health</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="header" role="banner">
+        <div class="container header-inner">
+            <a href="#" class="logo" aria-label="Meridian Medical Group - Home">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 8V24M8 16H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="16" cy="16" r="6" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">
+                    <span class="logo-primary">Meridian</span>
+                    <span class="logo-secondary">Medical Group</span>
+                </span>
+            </a>
+
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#doctors" class="nav-link">Our Doctors</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#portal" class="nav-link nav-link--portal">Patient Portal</a></li>
+                    <li><a href="#booking" class="btn btn--primary nav-cta">Book Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" role="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <span class="hero-badge" aria-label="Trusted by patients">Trusted by 15,000+ Families</span>
+                    <h1 id="hero-title" class="hero-title">
+                        Expert Medical Care,
+                        <span class="hero-title-highlight">Close to Home</span>
+                    </h1>
+                    <p class="hero-description">
+                        Board-certified physicians providing comprehensive primary and specialty care.
+                        Same-week appointments, virtual visits, and a secure patient portal — all designed around you.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#booking" class="btn btn--primary btn--lg" data-scroll>Book an Appointment</a>
+                        <a href="#doctors" class="btn btn--outline btn--lg" data-scroll>Meet Our Doctors</a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <span class="trust-number" data-count="15000">0</span>
+                            <span class="trust-label">Active Patients</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-number" data-count="12">0</span>
+                            <span class="trust-label">Physicians</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-number" data-count="4">0</span>
+                            <span class="trust-label">Locations</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-number" data-count="98">0</span>
+                            <span class="trust-label">% Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-card hero-card--1">
+                        <div class="hero-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <span>Same-week appointments available</span>
+                    </div>
+                    <div class="hero-card hero-card--2">
+                        <div class="hero-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                        <span>Secure video visits from home</span>
+                    </div>
+                    <div class="hero-card hero-card--3">
+                        <div class="hero-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <span>24/7 access to your health records</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services" aria-labelledby="services-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="services-title" class="section-title">Our Medical Services</h2>
+                    <p class="section-description">Comprehensive care for every stage of life, all under one roof</p>
+                </header>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Primary Care</h3>
+                        <p class="service-description">Annual wellness exams, preventive screenings, chronic disease management, and coordinated referrals.</p>
+                        <ul class="service-features">
+                            <li>Annual physicals</li>
+                            <li>Chronic care management</li>
+                            <li>Vaccinations & immunizations</li>
+                            <li>Health screenings</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="M9 12l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Cardiology</h3>
+                        <p class="service-description">Heart health evaluations, EKGs, stress testing, and ongoing cardiovascular disease management.</p>
+                        <ul class="service-features">
+                            <li>Heart disease prevention</li>
+                            <li>EKG & stress testing</li>
+                            <li>Blood pressure management</li>
+                            <li>Cholesterol treatment</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Pediatrics</h3>
+                        <p class="service-description">Well-child visits, immunizations, developmental screenings, and acute care for children of all ages.</p>
+                        <ul class="service-features">
+                            <li>Well-child checkups</li>
+                            <li>Childhood immunizations</li>
+                            <li>Developmental assessments</li>
+                            <li>Same-day sick visits</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Women's Health</h3>
+                        <p class="service-description">Gynecological exams, family planning, prenatal care, and menopause management.</p>
+                        <ul class="service-features">
+                            <li>Annual GYN exams</li>
+                            <li>Prenatal & postpartum care</li>
+                            <li>Family planning</li>
+                            <li>Menopause management</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Dermatology</h3>
+                        <p class="service-description">Skin cancer screenings, acne treatment, eczema management, and cosmetic dermatology services.</p>
+                        <ul class="service-features">
+                            <li>Skin cancer screening</li>
+                            <li>Acne & rosacea treatment</li>
+                            <li>Eczema & psoriasis care</li>
+                            <li>Cosmetic procedures</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Urgent Care</h3>
+                        <p class="service-description">Walk-in care for minor injuries, infections, and illnesses. No appointment needed.</p>
+                        <ul class="service-features">
+                            <li>Minor injuries & burns</li>
+                            <li>Cold, flu & infections</li>
+                            <li>X-ray & lab on-site</li>
+                            <li>Extended evening hours</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="doctors" class="doctors" aria-labelledby="doctors-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="doctors-title" class="section-title">Meet Our Physicians</h2>
+                    <p class="section-description">Experienced, compassionate doctors dedicated to your wellbeing</p>
+                </header>
+                <div class="doctors-grid">
+                    <article class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face" alt="Dr. Sarah Mitchell" loading="lazy">
+                        </div>
+                        <div class="doctor-info">
+                            <h3 class="doctor-name">Dr. Sarah Mitchell, MD</h3>
+                            <p class="doctor-specialty">Family Medicine & Medical Director</p>
+                            <div class="doctor-credentials">
+                                <span class="credential">Board Certified</span>
+                                <span class="credential">20+ Years Experience</span>
+                            </div>
+                            <p class="doctor-bio">Dr. Mitchell completed her residency at Johns Hopkins and has served our community for two decades. She specializes in preventive care and chronic disease management.</p>
+                            <div class="doctor-languages">
+                                <span>Languages:</span> English, Spanish
+                            </div>
+                        </div>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop&crop=face" alt="Dr. James Chen" loading="lazy">
+                        </div>
+                        <div class="doctor-info">
+                            <h3 class="doctor-name">Dr. James Chen, MD</h3>
+                            <p class="doctor-specialty">Cardiology</p>
+                            <div class="doctor-credentials">
+                                <span class="credential">Board Certified</span>
+                                <span class="credential">Fellow, American College of Cardiology</span>
+                            </div>
+                            <p class="doctor-bio">Dr. Chen trained at Mayo Clinic and brings expertise in interventional cardiology and heart failure management. He is passionate about cardiac prevention.</p>
+                            <div class="doctor-languages">
+                                <span>Languages:</span> English, Mandarin
+                            </div>
+                        </div>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1594824831860-9c1b1b1b1b1b?w=400&h=400&fit=crop&crop=face" alt="Dr. Maria Rodriguez" loading="lazy">
+                        </div>
+                        <div class="doctor-info">
+                            <h3 class="doctor-name">Dr. Maria Rodriguez, MD</h3>
+                            <p class="doctor-specialty">Pediatrics</p>
+                            <div class="doctor-credentials">
+                                <span class="credential">Board Certified</span>
+                                <span class="credential">Fellow, American Academy of Pediatrics</span>
+                            </div>
+                            <p class="doctor-bio">Dr. Rodriguez earned her medical degree from UCSF and completed a pediatric fellowship at Boston Children's Hospital. She loves partnering with families.</p>
+                            <div class="doctor-languages">
+                                <span>Languages:</span> English, Spanish, Portuguese
+                            </div>
+                        </div>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1609757116688-21fa4768d4b7?w=400&h=400&fit=crop&crop=face" alt="Dr. Michael Thompson" loading="lazy">
+                        </div>
+                        <div class="doctor-info">
+                            <h3 class="doctor-name">Dr. Michael Thompson, MD</h3>
+                            <p class="doctor-specialty">Internal Medicine</p>
+                            <div class="doctor-credentials">
+                                <span class="credential">Board Certified</span>
+                                <span class="credential">15+ Years Experience</span>
+                            </div>
+                            <p class="doctor-bio">Dr. Thompson graduated from Stanford Medical School and completed his residency at Massachusetts General Hospital. He focuses on complex diagnostic cases.</p>
+                            <div class="doctor-languages">
+                                <span>Languages:</span> English
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking" aria-labelledby="booking-title">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="booking-info">
+                        <h2 id="booking-title" class="section-title">Schedule Your Visit</h2>
+                        <p class="booking-description">Book online in minutes. We offer same-week availability for new and returning patients.</p>
+                        <ul class="booking-benefits">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                Real-time availability
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                Choose in-person or video visit
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                Instant confirmation via text/email
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                Secure, HIPAA-compliant
+                            </li>
+                        </ul>
+                    </div>
+                    <form id="booking-form" class="booking-form" novalidate>
+                        <input type="hidden" name="form_type" value="appointment_request">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="visit-type">Visit Type *</label>
+                                <select id="visit-type" name="visit_type" required>
+                                    <option value="">Select visit type</option>
+                                    <option value="new-patient">New Patient Visit</option>
+                                    <option value="follow-up">Follow-up Appointment</option>
+                                    <option value="annual">Annual Physical / Wellness</option>
+                                    <option value="acute">Acute / Sick Visit</option>
+                                    <option value="video">Telehealth / Video Visit</option>
+                                </select>
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="provider">Preferred Provider</label>
+                                <select id="provider" name="provider">
+                                    <option value="">Any available doctor</option>
+                                    <option value="dr-mitchell">Dr. Sarah Mitchell (Family Medicine)</option>
+                                    <option value="dr-chen">Dr. James Chen (Cardiology)</option>
+                                    <option value="dr-rodriguez">Dr. Maria Rodriguez (Pediatrics)</option>
+                                    <option value="dr-thompson">Dr. Michael Thompson (Internal Medicine)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="first_name" required autocomplete="given-name">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="last_name" required autocomplete="family-name">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required autocomplete="email">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dob">Date of Birth *</label>
+                                <input type="date" id="dob" name="dob" required autocomplete="bday">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="insurance">Primary Insurance</label>
+                                <select id="insurance" name="insurance">
+                                    <option value="">Select insurance</option>
+                                    <option value="blue-cross">Blue Cross Blue Shield</option>
+                                    <option value="aetna">Aetna</option>
+                                    <option value="cigna">Cigna</option>
+                                    <option value="united">UnitedHealthcare</option>
+                                    <option value="medicare">Medicare</option>
+                                    <option value="medicaid">Medicaid</option>
+                                    <option value="other">Other / Self-pay</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferred-date">Preferred Date</label>
+                            <input type="date" id="preferred-date" name="preferred_date" min="">
+                        </div>
+                        <div class="form-group">
+                            <label for="reason">Reason for Visit</label>
+                            <textarea id="reason" name="reason" rows="4" placeholder="Briefly describe your symptoms or reason for the appointment..."></textarea>
+                        </div>
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I understand this is an appointment request. The office will contact me to confirm date and time. *</label>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--lg btn--full">Request Appointment</button>
+                        <p class="form-disclaimer">This form is for non-urgent appointments only. For medical emergencies, call 911 or visit the nearest emergency room.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="portal" class="portal" aria-labelledby="portal-title">
+            <div class="container">
+                <div class="portal-wrapper">
+                    <div class="portal-info">
+                        <h2 id="portal-title" class="section-title">Patient Portal</h2>
+                        <p class="portal-description">Secure, 24/7 access to your health information from any device</p>
+                        <ul class="portal-features">
+                            <li>View test results & lab reports</li>
+                            <li>Request prescription refills</li>
+                            <li>Message your care team securely</li>
+                            <li>View & pay bills online</li>
+                            <li>Schedule & manage appointments</li>
+                            <li>Access immunization records</li>
+                            <li>Update personal information</li>
+                            <li>Download visit summaries</li>
+                        </ul>
+                        <a href="#portal-login" class="btn btn--primary btn--lg">Access Patient Portal</a>
+                    </div>
+                    <div class="portal-visual" aria-hidden="true">
+                        <div class="portal-screenshot">
+                            <div class="portal-screen">
+                                <div class="portal-header">
+                                    <div class="portal-dots"><span></span><span></span><span></span></div>
+                                </div>
+                                <div class="portal-content">
+                                    <div class="portal-nav">
+                                        <div class="portal-nav-item active"></div>
+                                        <div class="portal-nav-item"></div>
+                                        <div class="portal-nav-item"></div>
+                                        <div class="portal-nav-item"></div>
+                                    </div>
+                                    <div class="portal-cards">
+                                        <div class="portal-card"></div>
+                                        <div class="portal-card"></div>
+                                        <div class="portal-card"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-content">
+                        <h2 id="about-title" class="section-title">Committed to Your Health</h2>
+                        <p class="about-text">For over 25 years, Meridian Medical Group has been the trusted healthcare partner for families across the region. Our patient-first philosophy means we listen first, then provide personalized care plans tailored to your unique needs.</p>
+                        <p class="about-text">We believe great healthcare is built on relationships. That's why we invest in continuity of care — you'll see the same physician who knows your history, understands your goals, and advocates for your wellbeing.</p>
+                        <div class="about-values">
+                            <div class="value">
+                                <div class="value-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                </div>
+                                <h4>Compassionate Care</h4>
+                                <p>We treat every patient with dignity, respect, and empathy.</p>
+                            </div>
+                            <div class="value">
+                                <div class="value-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <h4>Clinical Excellence</h4>
+                                <p>Board-certified physicians practicing evidence-based medicine.</p>
+                            </div>
+                            <div class="value">
+                                <div class="value-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                </div>
+                                <h4>Accessibility</h4>
+                                <p>Same-week appointments, virtual visits, and multiple locations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="25">0</span>
+                            <span class="stat-label">Years Serving the Community</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="50000">0</span>
+                            <span class="stat-label">Patient Visits Annually</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="99">0</span>
+                            <span class="stat-label">% Insurance Plans Accepted</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="4.9">0</span>
+                            <span class="stat-label">Average Patient Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="contact-title" class="section-title">Visit Us</h2>
+                    <p class="section-description">Four convenient locations with extended hours</p>
+                </header>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="location-card">
+                            <h3>Main Campus</h3>
+                            <address>
+                                1250 Meridian Boulevard<br>
+                                Suite 200, Medical Arts Building<br>
+                                Springfield, IL 62704
+                            </address>
+                            <div class="location-hours">
+                                <p><strong>Mon–Fri:</strong> 7:00 AM – 7:00 PM</p>
+                                <p><strong>Sat:</strong> 8:00 AM – 2:00 PM</p>
+                                <p><strong>Sun:</strong> Closed</p>
+                            </div>
+                            <a href="tel:5550123456" class="location-phone">(555) 012-3456</a>
+                        </div>
+                        <div class="location-card">
+                            <h3>Northside Clinic</h3>
+                            <address>
+                                3400 North Avenue<br>
+                                Springfield, IL 62702
+                            </address>
+                            <div class="location-hours">
+                                <p><strong>Mon–Fri:</strong> 8:00 AM – 5:00 PM</p>
+                                <p><strong>Sat:</strong> 9:00 AM – 1:00 PM</p>
+                            </div>
+                            <a href="tel:5550123457" class="location-phone">(555) 012-3457</a>
+                        </div>
+                        <div class="location-card">
+                            <h3>West End Family Practice</h3>
+                            <address>
+                                890 West Main Street<br>
+                                Springfield, IL 62701
+                            </address>
+                            <div class="location-hours">
+                                <p><strong>Mon–Fri:</strong> 7:30 AM – 6:00 PM</p>
+                                <p><strong>Sat:</strong> 8:00 AM – 12:00 PM</p>
+                            </div>
+                            <a href="tel:5550123458" class="location-phone">(555) 012-3458</a>
+                        </div>
+                        <div class="location-card">
+                            <h3>Urgent Care Center</h3>
+                            <address>
+                                2100 Emergency Way<br>
+                                Springfield, IL 62703
+                            </address>
+                            <div class="location-hours">
+                                <p><strong>Daily:</strong> 8:00 AM – 10:00 PM</p>
+                                <p><strong>Holidays:</strong> 9:00 AM – 5:00 PM</p>
+                            </div>
+                            <a href="tel:5550123459" class="location-phone">(555) 012-3459</a>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <h3>Send Us a Message</h3>
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <input type="hidden" name="form_type" value="general_inquiry">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="c-first-name">First Name *</label>
+                                    <input type="text" id="c-first-name" name="first_name" required autocomplete="given-name">
+                                    <span class="form-error" aria-live="polite"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="c-last-name">Last Name *</label>
+                                    <input type="text" id="c-last-name" name="last_name" required autocomplete="family-name">
+                                    <span class="form-error" aria-live="polite"></span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="c-email">Email *</label>
+                                    <input type="email" id="c-email" name="email" required autocomplete="email">
+                                    <span class="form-error" aria-live="polite"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="c-phone">Phone</label>
+                                    <input type="tel" id="c-phone" name="phone" autocomplete="tel">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="billing">Billing & Insurance</option>
+                                    <option value="records">Medical Records</option>
+                                    <option value="referral">Referral Request</option>
+                                    <option value="feedback">Feedback / Complaint</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="insurance" aria-labelledby="insurance-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="insurance-title" class="section-title">Insurance & Payment</h2>
+                    <p class="section-description">We accept most major insurance plans and offer flexible payment options</p>
+                </header>
+                <div class="insurance-logos" aria-label="Accepted insurance providers">
+                    <div class="insurance-logo" aria-label="Blue Cross Blue Shield">BCBS</div>
+                    <div class="insurance-logo" aria-label="Aetna">Aetna</div>
+                    <div class="insurance-logo" aria-label="Cigna">Cigna</div>
+                    <div class="insurance-logo" aria-label="UnitedHealthcare">UHC</div>
+                    <div class="insurance-logo" aria-label="Medicare">Medicare</div>
+                    <div class="insurance-logo" aria-label="Medicaid">Medicaid</div>
+                    <div class="insurance-logo" aria-label="Humana">Humana</div>
+                    <div class="insurance-logo" aria-label="Other plans accepted">+ More</div>
+                </div>
+                <p class="insurance-note">Don't see your plan? <a href="#contact">Contact us</a> to verify coverage. Self-pay patients welcome with transparent pricing.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo" aria-label="Meridian Medical Group - Home">
+                        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 8V24M8 16H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="16" cy="16" r="6" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">
+                            <span class="logo-primary">Meridian</span>
+                            <span class="logo-secondary">Medical Group</span>
+                        </span>
+                    </a>
+                    <p class="footer-tagline">Compassionate, expert medical care for you and your family since 1999.</p>
+                    <div class="social-links" role="list" aria-label="Social media links">
+                        <a href="#" class="social-link" aria-label="Facebook" role="listitem"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Twitter" role="listitem"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn" role="listitem"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Google Reviews" role="listitem"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.19.26 2.25.67 3.15.57.38 1.39.58 2.26.58s1.69-.2 2.26-.58c.41-.9.67-1.96.67-3.15v-1l-2.15-1.83c-.13.58-.21 1.17-.21 1.79 0 4.08 3.05 7.44 7 7.93z"/></svg></a>
+                    </div>
+                </div>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-nav-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#doctors">Our Doctors</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#booking">Book Appointment</a></li>
+                            <li><a href="#portal">Patient Portal</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4>Patient Resources</h4>
+                        <ul>
+                            <li><a href="#">New Patient Forms</a></li>
+                            <li><a href="#">Insurance & Billing</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Notice of Privacy Practices</a></li>
+                            <li><a href="#">Patient Rights</a></li>
+                            <li><a href="#">Accessibility Statement</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4>Contact</h4>
+                        <address class="footer-address">
+                            <p>1250 Meridian Boulevard, Suite 200</p>
+                            <p>Springfield, IL 62704</p>
+                            <p><a href="tel:5550123456">(555) 012-3456</a></p>
+                            <p><a href="mailto:info@meridianmedical.com">info@meridianmedical.com</a></p>
+                        </address>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Meridian Medical Group. All rights reserved.</p>
+                <p class="disclaimer">This website is for informational purposes only and does not constitute medical advice. For emergencies, call 911.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
